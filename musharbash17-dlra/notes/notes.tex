@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{parskip}
+
+\author{Stefan Ehin}
+\title{Notes on: Dynamical Low Rank approximation of PDEs with random parameters}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem}
+\begin{enumerate}
+    \item Regular PDE problem statements do not account for the potential error in many parameters: coefficients of the operator, forcing/source terms, initial conditions and boundary conditions.
+    \item
+    \begin{enumerate}
+        \item Monte Carlo method is simple but has slow convergence in sample size.
+        \item Spectral methods are considerably more compute-efficient but it assumes the underlying solution map is smooth and the computation becomes compute-heavy when the stochastic space is high-dimensinal.
+        \item In case the solution manifold is approximately linear the curse of dimensionality is broken but it fails for manifolds that strongly dimiate from being linear.
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Key idea}
+\begin{enumerate}
+    \item Model all the error-prone variables as probability distributions.
+    \item Use a dynamical low-rank basis i.e. reduced basis like in 2. (C) but evolving over time.
+\end{enumerate}
+
+\section*{What I'd prove/extend}
+	
+\end{document}
+
