@@ -1,17 +1,29 @@
 \documentclass{article}
 
-\usepackage{parskip}
+\usepackage{parskip,mathrsfs}
 
 \author{Stefan Ehin}
-\title{Notes on: ...}
+\title{Notes on: Advances in Dynamical Low-Rank Approximations for
+random PDEs and Data Assimilation}
 
 \begin{document}
 
 \maketitle
 
 \section*{Problem}
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item Monte Carlo is non-intrusive and dimension-independent, but the error decays only as $\mathscr{O}(N_s^{-1/2})$.
+        \item Stochastic collocation and stochastic Galerkin methods both suffer from the curse of dimensionality.
+    \end{enumerate}
+    \item Reduced Basis methods has to choose between the low-dimensionality and expressivity of chosen type of basis.
+\end{enumerate}
 
 \section*{Key idea}
+\begin{enumerate}
+    \item Reduce the dimensionality of the problem by projecting the problem to a much smaller linear subspace.
+    \item Opt for separate space and stochastic bassis of which both depend on time.
+\end{enumerate}
 
 \section*{What I'd prove/extend}
 	
